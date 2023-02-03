@@ -1,13 +1,14 @@
 import flet as ft
-from entrada import Entrada
+from marco_entrada import MarcoEntrada
 
 
 def main(page: ft.Page):
     page.title = ''
     page.window_width = 600
     page.window_height = 400
+    page.bgcolor = ft.colors.INDIGO
 
-    entrada = Entrada()
+    entrada = MarcoEntrada()
 
     page.add(entrada)
 
